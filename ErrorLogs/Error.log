@@ -1,0 +1,56 @@
+2014/02/15 17:40:11:
+Raised Soft error:
+            file: C:/Jorge/GuiiCode/BiiNewHive.py
+            function: None
+            line: 17,         main = NewHiveUI()
+            exception: descriptor 'setObjectName' requires a 'PySide.QtCore.QObject' object but received a 'str':
+2014/02/15 17:41:12:
+Raised Soft error:
+            file: C:/Jorge/GuiiCode/BiiNewHive.py
+            function: None
+            line: 17,         main = NewHiveUI()
+            exception: '__init__' method of object's base class (NewHiveUI) not called.:
+2014/02/15 17:45:04:
+Raised Soft error:
+            file: C:/Jorge/GuiiCode/BiiNewHive.py
+            function: None
+            line: 20,         main = NewHiveUI()
+            exception: descriptor 'setObjectName' requires a 'PySide.QtCore.QObject' object but received a 'str':
+2014/02/15 20:02:57:
+Raised Soft error:
+            file: C:/Jorge/GuiiCode/BiiNewHive.py
+            function: None
+            line: 52,         main = NewHiveUI()
+            exception: 'PySide.QtCore.QObject.connect' called with wrong argument types:
+  PySide.QtCore.QObject.connect(PySide.QtGui.QPushButton, str, bool)
+Supported signatures:
+  PySide.QtCore.QObject.connect(PySide.QtCore.QObject, str, callable, PySide.QtCore.Qt.ConnectionType = Qt.AutoConnection)
+  PySide.QtCore.QObject.connect(PySide.QtCore.QObject, PySide.QtCore.QMetaMethod, PySide.QtCore.QObject, PySide.QtCore.QMetaMethod, PySide.QtCore.Qt.ConnectionType = Qt.AutoConnection)
+  PySide.QtCore.QObject.connect(PySide.QtCore.QObject, str, PySide.QtCore.QObject, str, PySide.QtCore.Qt.ConnectionType = Qt.AutoConnection)
+  PySide.QtCore.QObject.connect(PySide.QtCore.QObject, str, str, PySide.QtCore.Qt.ConnectionType = Qt.AutoConnection)
+  PySide.QtCore.QObject.connect(str, callable, PySide.QtCore.Qt.ConnectionType = Qt.AutoConnection)
+  PySide.QtCore.QObject.connect(str, PySide.QtCore.QObject, str, PySide.QtCore.Qt.ConnectionType = Qt.AutoConnection):
+2014/02/16 10:56:15:
+Raised Soft error:
+            file: C:/Jorge/GuiiCode/BiiNewHive.py
+            function: None
+            line: 99,         main = NewHiveUI()
+            exception: Failed to connect signal toggled(bool).:
+2014/02/16 11:04:45:
+Raised Soft error:
+            file: C:/Jorge/GuiiCode/BiiNewHive.py
+            function: None
+            line: 99,         main = NewHiveUI()
+            exception: 'builtin_function_or_method' object has no attribute 'connect':
+2014/02/16 11:19:01:
+Raised Soft error:
+            file: C:/Jorge/GuiiCode/BiiNewHive.py
+            function: createHive
+            line: 89,             print "\n".join(arrayResponse)
+            exception: :
+2014/02/16 11:26:09:
+Raised Soft error:
+            file: BiiNewHive.py
+            function: createHive
+            line: 91
+            exception: :

@@ -5,16 +5,16 @@ from PySide.QtGui import *
 
 class CppBlockWidget(QWidget):
     def setupUi(self):
-        CppBlockWidget.setObjectName("CppBlockWidget")
+        self.setObjectName("CppBlockWidget")
         self.resize(344, 162)
         self.formLayout = QFormLayout(self)
         self.formLayout.setObjectName("formLayout")
         self.label_8 = QLabel(self)
         self.label_8.setObjectName("label_8")
         self.formLayout.setWidget(0, QFormLayout.LabelRole, self.label_8)
-        self.blockNameEdit_2 = QLineEdit(self)
-        self.blockNameEdit_2.setObjectName("blockNameEdit_2")
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.blockNameEdit_2)
+        self.blockNameEdit = QLineEdit(self)
+        self.blockNameEdit.setObjectName("blockNameEdit_2")
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.blockNameEdit)
         self.label_6 = QLabel(self)
         self.label_6.setObjectName("label_6")
         self.formLayout.setWidget(1, QFormLayout.LabelRole, self.label_6)
@@ -67,3 +67,15 @@ class CppBlockWidget(QWidget):
         self.langConbo_3.setItemText(3, QApplication.translate("CppBlockWidget", "RelWithDebInfo", None, QApplication.UnicodeUTF8))
         self.langConbo_3.setItemText(4, QApplication.translate("CppBlockWidget", "MinSizeRel", None, QApplication.UnicodeUTF8))
 
+    def checkOk(self):
+        #todo check all possibilities
+        return self.blockNameEdit.text()!=""
+
+    def setCheckOkEventFunction(self, function):
+        self.blockNameEdit.textChanged.connect(function)
+
+    def getBlockResponse(self):
+        try:
+            return [str(self.blockNameEdit.text())]
+        except:
+            return False
